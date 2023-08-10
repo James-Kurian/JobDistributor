@@ -16,7 +16,7 @@ Using the current setup requires the gson to be included as a reference library.
     ],
 }
 ```
-The compiled jar filed may require a preview features to be enabled.
+The compiled jar file may require preview features to be enabled.
 ```
 java --enable-preview -jar .\(Server/Worker).jar
 ```
