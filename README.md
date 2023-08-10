@@ -5,6 +5,7 @@ The Job Distributor is a Java-based project designed to allow users to define a 
 Clone the repository
 ```
 git clone https://github.com/James-Kurian/JobDistributor.git
+cd .\JobDistributor\
 ```
 
 
