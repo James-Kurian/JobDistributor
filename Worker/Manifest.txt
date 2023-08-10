@@ -1,2 +1,0 @@
-Main-Class: Worker
-Class-Path: gson.jar
