@@ -7,7 +7,19 @@ Clone the repository
 git clone https://github.com/James-Kurian/JobDistributor.git
 cd .\JobDistributor\
 ```
-
+The current set up has a lib folder which contains the nessesary gson.jar file. This project requires [Gson](https://github.com/google/gson) to run.
+Using the current setup requires the gson to be included as a reference library. You can do this in vscode through the settings.json file
+```json
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+    ],
+}
+```
+The compiled jar filed may require a preview features to be enabled.
+```
+java --enable-preview -jar .\(Server/Worker).jar
+```
 
 ## Server
 
@@ -44,7 +56,6 @@ Check out the Main.java class
 
 ### Usage
 
-
 When the Server is started a GUI will allow for the input of commands.
 There are by default five commands:
 1. HELP (prints list of commands)
@@ -55,7 +66,6 @@ There are by default five commands:
 
 
 ## Worker
-
 
 ### Usage
 The user will be prompted for a Server ip. Then they will be prompted for the Server's port. Once filled in the program will receive the DistributableTask class from the Server and wait for Jobs.
