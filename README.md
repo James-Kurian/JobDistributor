@@ -42,31 +42,6 @@ See the two example implementations of the Distributable task class
 Check out the Main.java class
 
 
-### Compile Server
-```shell
-# Navigate into the Server folder
-
-
-cd .\Server\
-
-
-# Add the gson.jar file to the class path and compile .java files to .class
-
-
-javac -cp lib/gson.jar -d bin src/*.java
-
-
-# Compile .class files to a single .jar file called Server.jar
-
-
-jar cfm Server.jar Manifest.txt -C bin . -C lib gson.jar
-
-
-# Run Server.jar
-
-
-java -jar .\Server.jar
-```
 ### Usage
 
 
@@ -80,33 +55,6 @@ There are by default five commands:
 
 
 ## Worker
-
-
-### Compile Worker
-```shell
-# Navigate into the Worker folder
-
-
-cd .\Worker\
-
-
-# Add the gson.jar file to the class path and compile .java files to .class
-
-
-javac -cp lib/gson.jar -d bin src/*.java
-
-
-# Compile .class files to a single .jar file called Worker.jar
-
-
-jar cfm Worker.jar Manifest.txt -C bin . -C lib gson.jar
-
-
-# Run Worker.jar
-
-
-java -jar .\Worker.jar
-```
 
 
 ### Usage
