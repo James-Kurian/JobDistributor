@@ -12,7 +12,7 @@ git clone https://github.com/James-Kurian/JobDistributor.git
 
 
 ### Defining a task
-To define a task, create a new class that extends **DistributableTask**. DistributableTask needs to be parameterized with three types. First is the Type of data that will be initially loaded. Second is the Type of data a chunk will be. Third is the type of data a chunk will be transformed into. For example, a possible implementation that counts the number of thirteens ins a large array would be declared like so.
+To define a task, create a new class that extends **DistributableTask**. DistributableTask needs to be parameterized with three types. First is the Type of data that will be initially loaded. Second is the Type of data a chunk will be. Third is the type of data a chunk will be transformed into. For example, a possible implementation that counts the number of thirteens in a large array would be declared like so.
 ```java
 public class CountThriteens extends DistributableTask<ArrayList<Integer>, ArrayList<Integer>, Integer>{
   ...
