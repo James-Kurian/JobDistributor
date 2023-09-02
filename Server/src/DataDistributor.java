@@ -62,7 +62,7 @@ public class DataDistributor extends Thread{
                     }else {
                         Object dataChunk = task.getNextChunk();
                         UUID jobID = UUID.randomUUID();
-                        job = new Job(jobID, dataChunk, w.getID());
+                        job = new Job(jobID, dataChunk);
                     }
                     assignedJobs.add(job);
                     w.assign(job);

@@ -13,7 +13,7 @@ public class Job implements Serializable{
     private Status jobStatus = Status.INPROGRESS;
     private static DistributableTask<?, ?, ?> methodCaller;
 
-    public Job(UUID jobID, Object data, UUID assignedWorkerID){
+    public Job(UUID jobID, Object data){
         this.jobID = jobID;
         this.data = data;
     }
